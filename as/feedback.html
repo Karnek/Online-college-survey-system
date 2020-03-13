@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+<title>Feedback form</title>
+<style>
+     body{
+        background-color:cornflowerblue;  
+        color:black;
+    } 
+</style>
+</head>
+<body>
+
+    <h1>Questionnaire -Gradduate Survey</h1>
+    <h3>introduction:</h3>
+    <p>The Silicon Institute of Technology (Silicon) in its strive for excellence considers the opinion / feedback of our graduates as one
+         of the most valuable guiding resources. Silicon graduates feedback on educational experience at Silicon Institute of Technology help us
+        significantly in developing the future direction of our educational program.  </p>
+
+    <form action = "feedback.jsp" method = "GET">
+    <table >
+        <tr>
+            <td>
+        <p>1.what degree you pursued at silicon</p>
+            </td><td>
+        
+            <select name="slt_degree">
+                <option value="btech">btech</option>
+                <option value="mca">mca</option>
+                <option value="bca">bca</option>
+              </select>
+                
+    </td>
+    </tr>
+    <tr><td>
+            <p>2.Starting year</p>
+        </td><td>
+            <select name="slt_year">
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+              </select>
+            
+           
+    </td></tr>
+    <tr><td><p>3.Gender</p>
+        </td><td>
+          
+        male    <input type="radio" name="rd_Gender" value="male"></td>
+        <td colspan="2">
+        female    <input type="radio" name="rd_Gender" value="female"></td>
+        <td>
+        <!--others    <input type="radio" name="Gender"></td>-->
+    </tr>
+        
+    <tr><td>
+            <p>4.What is your branch</p>
+        </td><td>
+            <select name="slt_branch">
+                <option value="cse">cse</option>
+                <option value="ece">ece</option>
+                <option value="eee">eee</option>
+                <option value="aei">aei</option>
+              </select>
+           
+            
+    </td></tr>
+    <tr><td><p>5.what is your gpa</p></td>
+    <td>
+        <input type="text" name="txt_gpa" placeholder="your gpa goes here">
+    </td></tr>
+    <tr>
+        <td><p>6.which of the following best describes your present status</p></td>
+        <td>
+                        <select name="slt_present_status">
+                        <option value="cse">offered job through campus reqruitment</option>
+                        <option value="ece">offered job through off campus</option>
+                        <option value="eee">interviewed ,no offer</option>
+                        <option value="aei">qualified entrance exam for higher studies</option>
+                      </select>
+                   
+        </td>
+    </tr>
+
+    </table>
+        <table  id="table2">
+            <tr ><td colspan="6"><strong>Section 2.Education Experience at Silicon</strong></td></tr>
+        <tr >
+            <td rowspan="2">
+                <p><i>Please rate the following items with respect to the 
+                    overall satisfaction that you received/ experienced 
+                    against each item.Please </i></p>
+            </td>
+            <td class="span" colspan="5";><strong>Rate your experience for each statement</strong></td>
+        </tr>
+        <tr>
+        
+            <td><strong>Not Satisfied</strong></td>
+            <td><strong>Somewhat Satisfied</strong></td>
+            <td><strong>Satisfied</strong></td>    
+            <td><strong>Very much Satisfied</strong></td>
+            <td><strong>Extremely Satisfied</strong></td>
+        
+        </tr>
+
+        <tr><td><strong>Overall Assessment of Student Experience</strong></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        
+        <tr><td><strong>1.Quality of Instruction by Faculty in:</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr><td><li> Mathematics</li></td>
+            <td><input type="radio" name="rd_math" value="not satisfied"></td>
+            <td><input type="radio" name="rd_math" value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_math" value="satisfied"></td>
+            <td><input type="radio" name="rd_math" value="very much satisfied"></td>
+            <td><input type="radio" name="rd_math" value="extremely satisfied"></td>
+        </tr>
+            
+        <tr><td><li>Physical Science</li></td>
+            <td><input type="radio" name="rd_physical"value="not satisfied"></td>
+            <td><input type="radio" name="rd_physical"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_physical"value="satisfied"></td>
+            <td><input type="radio" name="rd_physical"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_physical"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><li>Humanities/Management</li></td>
+            <td><input type="radio" name="rd_humanities"value="not satisfied"></td>
+            <td><input type="radio" name="rd_humanities"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_humanities"value="satisfied"></td>
+            <td><input type="radio" name="rd_humanities"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_humanities"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><li>Core Engineering Cources</li></td>
+            <td><input type="radio" name ="rd_core"value="not satisfied"></td>
+            <td><input type="radio" name ="rd_core"value="somewhat satisfied"></td>
+            <td><input type="radio" name ="rd_core"value="satisfied"></td>
+            <td><input type="radio" name ="rd_core"value="very much satisfied"></td>
+            <td><input type="radio" name ="rd_core"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><li>Engineering Cources imparted by others</li></td>
+            <td><input type="radio" name="rd_engineering"value="not satisfied"></td>
+            <td><input type="radio" name="rd_engineering"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_engineering"value="satisfied"></td>
+            <td><input type="radio" name="rd_engineering"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_engineering"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><strong>2)Qualities of Facilities</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr><td><li>Classroom</li></td>
+            <td><input type="radio" name="rd_classroom"value="not satisfied"></td>
+            <td><input type="radio" name="rd_classroom"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_classroom"value="satisfied"></td>
+            <td><input type="radio" name="rd_classroom"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_classroom"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><li>Laboratories</li></td>
+            <td><input type="radio" name="rd_Laboratories"value="not satisfied"></td>
+            <td><input type="radio" name="rd_Laboratories"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_Laboratories"value="satisfied"></td>
+            <td><input type="radio" name="rd_Laboratories"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_Laboratories"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><li>Computing Facility</li></td>
+            <td><input type="radio" name="rd_computing"value="not satisfied"></td>
+            <td><input type="radio" name="rd_computing"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_computing"value="satisfied"></td>
+            <td><input type="radio" name="rd_computing"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_computing"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><li>Library</li></td>
+            <td><input type="radio" name="rd_libary"value="not satisfied"></td>
+            <td><input type="radio" name="rd_libary"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_libary"value="satisfied"></td>
+            <td><input type="radio" name="rd_libary"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_libary"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><li>Other Specialised Labs</li></td>
+            <td><input type="radio" name="rd_other"value="not satisfied"></td>
+            <td><input type="radio" name="rd_other"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_other"value="satisfied"></td>
+            <td><input type="radio" name="rd_other"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_other"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><strong>3)Quality of Support Services</strong></td>
+        </tr>
+           <tr> <td><li>Admission cell</li></td><td><input type="radio" name="rd_admission"value="not satisfied"></td>
+            <td><input type="radio" name="rd_admission"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_admission"value="satisfied"></td>
+            <td><input type="radio" name="rd_admission"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_admission"value="extremely satisfied"></td></tr>
+           <tr> <td><li>Administration</li></td><td><input type="radio" name="rd_administration"value="not satisfied"></td>
+            <td><input type="radio" name="rd_administration"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_administration"value="satisfied"></td>
+            <td><input type="radio" name="rd_administration"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_administration"value="extremely satisfied"></td></tr>
+           <tr> <td><li>Examination Cell</li></td><td><input type="radio" name="rd_examination"value="not satisfied"></td>
+            <td><input type="radio" name="rd_examination"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_examination"value="satisfied"></td>
+            <td><input type="radio" name="rd_examination"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_examination"value="extremely satisfied"></td></tr>
+           <tr> <td><li>Mentoring/Proctorial Services</li></td><td><input type="radio" name="rd_mentoring"value="not satisfied"></td>
+            <td><input type="radio" name="rd_mentoring"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_mentoring"value="satisfied"></td>
+            <td><input type="radio" name="rd_mentoring"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_mentoring"value="extremely satisfied"></td></tr>
+           <tr> <td><li>Training & Placement Cell</li></td><td><input type="radio" name="rd_training"value="not satisfied"></td>
+            <td><input type="radio" name="rd_training"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_training"value="satisfied"></td>
+            <td><input type="radio" name="rd_training"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_training"value="extremely satisfied"></td></tr>
+           <tr> <td><li>Hostel Facilities</li></td><td><input type="radio" name="rd_hostel"value="not satisfied"></td>
+            <td><input type="radio" name="rd_hostel"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_hostel"value="satisfied"></td>
+            <td><input type="radio" name="rd_hostel"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_hostel"value="extremely satisfied"></td></tr>
+            <tr><td><li>Canteen</li></td><td><input type="radio" name="rd_canteen"value="not satisfied"></td>
+            <td><input type="radio" name="rd_canteen"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_canteen"value="satisfied"></td>
+            <td><input type="radio" name="rd_canteen"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_canteen"value="extremely satisfied"></td></tr>
+            <tr><td><li>Transport</li></td><td><input type="radio" name="rd_transport"value="not satisfied"></td>
+            <td><input type="radio" name="rd_transport"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_transport"value="satisfied"></td>
+            <td><input type="radio" name="rd_transport"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_transport"value="extremely satisfied"></td></tr>
+            <tr><td><li>Recreation</li></td><td><input type="radio" name="rd_recreation"value="not satisfied"></td>
+            <td><input type="radio" name="rd_recreation"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_recreation"value="satisfied"></td>
+            <td><input type="radio" name="rd_recreation"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_recreation"value="extremely satisfied"></td></tr>
+            <tr><td><li>Campus Society</li></td><td><input type="radio" name="rd_campus"value="not satisfied"></td>
+            <td><input type="radio" name="rd_campus"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_campus"value="satisfied"></td>
+            <td><input type="radio" name="rd_campus"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_campus"value="extremely satisfied"></td></tr>
+        </tr>
+        <th>Curriculum and Instruction</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    
+  </tr>
+  <tr>
+  
+    <td>Curriculum for science and humanities courses(math,physics,chemistry,english and management) were adequate</td>
+    <th><input type="radio"name="rd_curriculum" value="not staisfied"></input></th>
+    <th><input type="radio"name="rd_curriculum" value="somewhat staisfied"></input></th>
+    <th><input type="radio"name="rd_curriculum" value="staisfied"></input></th>
+    <th><input type="radio"name="rd_curriculum" value="very much staisfied"></input></th>
+    <th><input type="radio"name="rd_curriculum" value="extremely staisfied"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>How you rate the adequacy and usefullness of general courses of study</td>
+    <th><input type="radio" name="rd_general"value="not satisfied"></input></th>
+    <th><input type="radio" name="rd_general"value="somewhat satisfied"></input></th>
+    <th><input type="radio" name="rd_general"value="satisfied"></input></th>
+    <th><input type="radio" name="rd_general"value="very much satisfied"></input></th>
+    <th><input type="radio" name="rd_general"value="extremely satisfied"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>How you rate the adequacy and usefullness of Program core(major) courses</td>
+    <th><input type="radio"name="rd_major"value="not satisfied"></input></th>
+    <th><input type="radio"name="rd_major"value="somewhat satisfied"></input></th>
+    <th><input type="radio"name="rd_major"value="satisfied"></input></th>
+    <th><input type="radio"name="rd_major"value="very much satisfied"></input></th>
+    <th><input type="radio"name="rd_major"value="extremely satisfied"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>How you rate the adequacy and usefullness of elective courses</td>
+    <th><input type="radio"name="rd_elective"value="not satisfied"></input></th>
+    <th><input type="radio"name="rd_elective"value="somewhat satisfied"></input></th>
+    <th><input type="radio"name="rd_elective"value="satisfied"></input></th>
+    <th><input type="radio"name="rd_elective"value="very much satisfied"></input></th>
+    <th><input type="radio"name="rd_elective"value="extremely satisfied"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>How you rate the adequacy and usefullness of computer technology in curriculum</td>
+    <th><input type="radio"name ="rd_computer"value="not satisfied"></input></th>
+    <th><input type="radio"name ="rd_computer"value="somewhat satisfied"></input></th>
+    <th><input type="radio"name ="rd_computer"value="satisfied"></input></th>
+    <th><input type="radio"name ="rd_computer"value="very much satisfied"></input></th>
+    <th><input type="radio"name ="rd_computer"value="extremely satisfied"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>Are you satisfied with the curriculum</td>
+    <th><input type="radio"name="rd_satisfaction"value="not satisfied"></input></th>
+    <th><input type="radio"name="rd_satisfaction"value="somewhat satisfied"></input></th>
+    <th><input type="radio"name="rd_satisfaction"value="satisfied"></input></th>
+    <th><input type="radio"name="rd_satisfaction"value="very much satisfied"></input></th>
+    <th><input type="radio"name="rd_satisfaction"value="extremely satisfied"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <th>Overall Program experience</th>
+    <th>strongly agree</th>
+    <th>Agree</th>
+    <th>Neutral</th>
+    <th>Disagree</th>
+    <th>Strongly disagree</th>
+    
+  </tr>
+  <tr>
+  
+    <td>As a graduating senior,i feel confident of my knowledge and understanding of my field of</td>
+    <th><input type="radio"name="rd_understanding"value="strongly agree"></input></th>
+    <th><input type="radio"name="rd_understanding"value="agree"></input></th>
+    <th><input type="radio"name="rd_understanding"value="neutral"></input></th>
+    <th><input type="radio"name="rd_understanding"value="disagree"></input></th>
+    <th><input type="radio"name="rd_understanding"value="strongly disagree"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>My Written and oral communication skills were reinforced by the program to allow me to function well in the job market</td>
+    <th><input type="radio"name="rd_skills"value="strongly agree"></input></th>
+    <th><input type="radio"name="rd_skills"value="agree"></input></th>
+    <th><input type="radio"name="rd_skills"value="neutral"></input></th>
+    <th><input type="radio"name="rd_skills"value="disagree"></input></th>
+    <th><input type="radio"name="rd_skills"value="strongly disagree"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>The project work within my academic program prepared me for my profession</td>
+    <th><input type="radio"name="rd_profession"value="strongly agree"></input></th>
+    <th><input type="radio"name="rd_profession"value="agree"></input></th>
+    <th><input type="radio"name="rd_profession"value="neutral"></input></th>
+    <th><input type="radio"name="rd_profession"value="disagree"></input></th>
+    <th><input type="radio"name="rd_profession"value="strongly disagree"></input></th>
+    
+  </tr>
+  
+  
+    <td>I am satisfied that the academic program prepared me to sucedd within my profession</td>
+    <th><input type="radio"name="rd_sprof"value="strongly agree"></input></th>
+    <th><input type="radio"name="rd_sprof"value="agree"></input></th>
+    <th><input type="radio"name="rd_sprof"value="neutral"></input></th>
+    <th><input type="radio"name="rd_sprof"value="disagree"></input></th>
+    <th><input type="radio"name="rd_sprof"value="strongly disagree"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>I am satisfied with the skills i gained from the training compomnent of the program</td>
+    <th><input type="radio"name="rd_train"value="strongly agree"></input></th>
+    <th><input type="radio"name="rd_train"value="agree"></input></th>
+    <th><input type="radio"name="rd_train"value="neutral"></input></th>
+    <th><input type="radio"name="rd_train"value="disagree"></input></th>
+    <th><input type="radio"name="rd_train"value="strongly disagree"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>My program of study provided me with the ethical and legal understandiong involved within my profession</td>
+    <th><input type="radio"name="rd_ethical"value="strongly agree"></input></th>
+    <th><input type="radio"name="rd_ethical"value="agree"></input></th>
+    <th><input type="radio"name="rd_ethical"value="neutral"></input></th>
+    <th><input type="radio"name="rd_ethical"value="disagree"></input></th>
+    <th><input type="radio"name="rd_ethical"value="strongly disagree"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>I have found extracurricular activities enriching and supportive of the learning</td>
+    <th><input type="radio"name="rd_learning"value="strongly agree"></input></th>
+    <th><input type="radio"name="rd_learning"value="agree"></input></th>
+    <th><input type="radio"name="rd_learning"value="neutral"></input></th>
+    <th><input type="radio"name="rd_learning"value="disagree"></input></th>
+    <th><input type="radio"name="rd_learning"value="strongly disagree"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>I learned the skills needed to effectively locate retrieve and evaluate information</td>
+    <th><input type="radio"name="rd_information"value="strongly agree"></input></th>
+    <th><input type="radio"name="rd_information"value="agree"></input></th>
+    <th><input type="radio"name="rd_information"value="neutral"></input></th>
+    <th><input type="radio"name="rd_information"value="disagree"></input></th>
+    <th><input type="radio"name="rd_information"value="strongly disagree"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>I believe in continuing proffesional development and aim to develop my skills and knowledge for graduation.</td>
+    <th><input type="radio"name="rd_grad"value="strongly agree"></input></th>
+    <th><input type="radio"name="rd_grad"value="agree"></input></th>
+    <th><input type="radio"name="rd_grad"value="neutral"></input></th>
+    <th><input type="radio"name="rd_grad"value="disagree"></input></th>
+    <th><input type="radio"name="rd_grad"value="strongly disagree"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>In general,I am satisfied with the experience i had at silicon</td>
+    <th><input type="radio"name="rd_silicon"value="strongly agree"></input></th>
+    <th><input type="radio"name="rd_silicon"value="agree"></input></th>
+    <th><input type="radio"name="rd_silicon"value="neutral"></input></th>
+    <th><input type="radio"name="rd_silicon"value="disagree"></input></th>
+    <th><input type="radio"name="rd_silicon"value="strongly disagree"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>I would advise other students to attend silicon</td>
+    <th><input type="radio"name="rd_advice"value="strongly agree"></input></th>
+    <th><input type="radio"name="rd_advice"value="agree"></input></th>
+    <th><input type="radio"name="rd_advice"value="neutral"></input></th>
+    <th><input type="radio"name="rd_advice"value="disagree"></input></th>
+    <th><input type="radio"name="rd_advice"value="strongly disagree"></input></th>
+    
+  </tr></table>
+  <h2>Section 3. Comments/Suggestions(Please feel free to comment on the program and its graduates in terms of their proffesionbal qualities and on any specific areas of strengths and weaknesses.Also,please feel free to suffest any improvements to our program of study) </h2>
+<table style="width:70%">
+ <tr><th>List the courses within your program from which you benefitted the most</th></tr>
+ <tr><td><textarea name="message1" rows="10" cols="150"></textarea></td></tr>
+ 
+</table>
+<table style="width:70%">
+  <tr><th>Which courses provided the best practical experience?</th></tr>
+  <tr><td><textarea name="message2" rows="10" cols="150"></textarea></td></tr>
+</table>
+<table style="width:70%">
+  <tr><th>What advice would you give to other students enrolled within your prograame?</th></tr>
+  <tr><td><textarea name="message3" rows="10" cols="150"></textarea></td></tr>
+</table>
+<table style="width:70%">
+  <tr><th>Any other suggestions to enrich the program of study at silicon.</th></tr>
+  <tr><td><textarea name="message4" rows="10" cols="150"></textarea></td></tr>
+</table>
+<input type = "submit" value = "Submit" />
+</form>
+                                                                                                                                                                                                                                                                                           
+        
+                                                                                                                                                                                                                                                                                   
+    
+    
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Graduate Survey</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Graduate Survey
+    Theme URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="navbar-brand text-brand" href="index.html">Graduate<span class="color-b">Survey</span></a>
+      <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-expanded="false">
+        <span class="fa fa-search" aria-hidden="true"></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="takesurvey.html">Take Survey</a>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-expanded="false">
+        <span class="fa fa-search" aria-hidden="true"></span>
+      </button>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Single star /-->
+  <section class="intro-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-8">
+          <div class="title-single-box">
+            <h1 class="title-single">Introduction</h1>
+            <span class="color-text-a">The Silicon Institute of Technology (Silicon) in its strive for excellence considers the opinion/feedback of our graduates as one
+         of the most valuable guiding resources. Silicon graduates feedback on educational experience at Silicon Institute of Technology help us
+        significantly in developing the future direction of our educational program.</span>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Contact
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Intro Single End /-->
+
+
+
+
+<!--/ Form form /-->
+<div class="container">
+    <form action = "form.jsp" method = "POST">
+    <table >
+        <tr>
+            <td>
+        <p>1.what degree you pursued at silicon</p>
+            </td><td>
+        
+            <select name="degree">
+                <option value="cse">cse</option>
+                <option value="ece">ece</option>
+                <option value="eee">eee</option>
+                <option value="aei">aei</option>
+              </select>
+                
+    </td>
+    </tr>
+    <tr><td>
+            <p>2.Starting year</p>
+        </td><td>
+            <select name="year">
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+              </select>
+            
+           
+    </td></tr>
+    <tr><td><p>3.Gender</p>
+        </td><td>
+          
+        male    <input type="radio" name="gender" value="male"></td>
+        <td colspan="2">
+        female    <input type="radio" name="gender" value="female"></td>
+        <td>
+        <!--others    <input type="radio" name="Gender"></td>-->
+    </tr>
+        
+    
+    <tr><td><p>4.what is your gpa</p></td>
+    <td>
+        <input type="text" name="gpa" placeholder="your gpa goes here">
+    </td></tr>
+    <tr>
+        <td><p>5.which of the following best describes your present status</p></td>
+        <td>
+                        <!-- <select name="description">
+                        <option value="cse">offered job through campus reqruitment</option>
+                        <option value="ece">offered job through off campus</option>
+                        <option value="eee">interviewed ,no offer</option>
+                        <option value="aei">qualified entrance exam for higher studies</option>
+                      </select> -->
+                      <textarea rows="1"  name="description" placeholder="Please type...">
+                      </textarea>
+                   
+        </td>
+    </tr>
+
+    </table>
+        <table  id="table2">
+            <tr ><td colspan="6"><strong>Section 2. Education Experience at Silicon</strong></td></tr>
+        <tr >
+            <td rowspan="2">
+                <p><i>Please rate the following items with respect to the 
+                    overall satisfaction that you received/ experienced 
+                    against each item.Please </i></p>
+            </td>
+            <td class="span" colspan="5";><strong>Rate your experience for each statement</strong></td>
+        </tr>
+        <tr>
+        
+            <td><strong>Not Satisfied</strong></td>
+            <td><strong>Somewhat Satisfied</strong></td>
+            <td><strong>Satisfied</strong></td>    
+            <td><strong>Very much Satisfied</strong></td>
+            <td><strong>Extremely Satisfied</strong></td>
+        
+        </tr>
+
+        <!-- <tr><td><strong>Overall Assessment of Student Experience</strong></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        
+        <tr><td><strong>1.Quality of Instruction by Faculty in:</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr><td><li> Mathematics</li></td>
+            <td><input type="radio" name="rd_math" value="not satisfied"></td>
+            <td><input type="radio" name="rd_math" value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_math" value="satisfied"></td>
+            <td><input type="radio" name="rd_math" value="very much satisfied"></td>
+            <td><input type="radio" name="rd_math" value="extremely satisfied"></td>
+        </tr>
+            
+        <tr><td><li>Physical Science</li></td>
+            <td><input type="radio" name="rd_physical"value="not satisfied"></td>
+            <td><input type="radio" name="rd_physical"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_physical"value="satisfied"></td>
+            <td><input type="radio" name="rd_physical"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_physical"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><li>Humanities/Management</li></td>
+            <td><input type="radio" name="rd_humanities"value="not satisfied"></td>
+            <td><input type="radio" name="rd_humanities"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_humanities"value="satisfied"></td>
+            <td><input type="radio" name="rd_humanities"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_humanities"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><li>Core Engineering Cources</li></td>
+            <td><input type="radio" name ="rd_core"value="not satisfied"></td>
+            <td><input type="radio" name ="rd_core"value="somewhat satisfied"></td>
+            <td><input type="radio" name ="rd_core"value="satisfied"></td>
+            <td><input type="radio" name ="rd_core"value="very much satisfied"></td>
+            <td><input type="radio" name ="rd_core"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><li>Engineering Cources imparted by others</li></td>
+            <td><input type="radio" name="rd_engineering"value="not satisfied"></td>
+            <td><input type="radio" name="rd_engineering"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_engineering"value="satisfied"></td>
+            <td><input type="radio" name="rd_engineering"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_engineering"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><strong>2)Qualities of Facilities</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr><td><li>Classroom</li></td>
+            <td><input type="radio" name="rd_classroom"value="not satisfied"></td>
+            <td><input type="radio" name="rd_classroom"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_classroom"value="satisfied"></td>
+            <td><input type="radio" name="rd_classroom"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_classroom"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><li>Laboratories</li></td>
+            <td><input type="radio" name="rd_Laboratories"value="not satisfied"></td>
+            <td><input type="radio" name="rd_Laboratories"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_Laboratories"value="satisfied"></td>
+            <td><input type="radio" name="rd_Laboratories"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_Laboratories"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><li>Computing Facility</li></td>
+            <td><input type="radio" name="rd_computing"value="not satisfied"></td>
+            <td><input type="radio" name="rd_computing"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_computing"value="satisfied"></td>
+            <td><input type="radio" name="rd_computing"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_computing"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><li>Library</li></td>
+            <td><input type="radio" name="rd_libary"value="not satisfied"></td>
+            <td><input type="radio" name="rd_libary"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_libary"value="satisfied"></td>
+            <td><input type="radio" name="rd_libary"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_libary"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><li>Other Specialised Labs</li></td>
+            <td><input type="radio" name="rd_other"value="not satisfied"></td>
+            <td><input type="radio" name="rd_other"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_other"value="satisfied"></td>
+            <td><input type="radio" name="rd_other"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_other"value="extremely satisfied"></td>
+        </tr>
+        <tr><td><strong>3)Quality of Support Services</strong></td>
+        </tr>
+           <tr> <td><li>Admission cell</li></td><td><input type="radio" name="rd_admission"value="not satisfied"></td>
+            <td><input type="radio" name="rd_admission"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_admission"value="satisfied"></td>
+            <td><input type="radio" name="rd_admission"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_admission"value="extremely satisfied"></td></tr>
+           <tr> <td><li>Administration</li></td><td><input type="radio" name="rd_administration"value="not satisfied"></td>
+            <td><input type="radio" name="rd_administration"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_administration"value="satisfied"></td>
+            <td><input type="radio" name="rd_administration"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_administration"value="extremely satisfied"></td></tr>
+           <tr> <td><li>Examination Cell</li></td><td><input type="radio" name="rd_examination"value="not satisfied"></td>
+            <td><input type="radio" name="rd_examination"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_examination"value="satisfied"></td>
+            <td><input type="radio" name="rd_examination"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_examination"value="extremely satisfied"></td></tr>
+           <tr> <td><li>Mentoring/Proctorial Services</li></td><td><input type="radio" name="rd_mentoring"value="not satisfied"></td>
+            <td><input type="radio" name="rd_mentoring"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_mentoring"value="satisfied"></td>
+            <td><input type="radio" name="rd_mentoring"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_mentoring"value="extremely satisfied"></td></tr>
+           <tr> <td><li>Training & Placement Cell</li></td><td><input type="radio" name="rd_training"value="not satisfied"></td>
+            <td><input type="radio" name="rd_training"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_training"value="satisfied"></td>
+            <td><input type="radio" name="rd_training"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_training"value="extremely satisfied"></td></tr>
+           <tr> <td><li>Hostel Facilities</li></td><td><input type="radio" name="rd_hostel"value="not satisfied"></td>
+            <td><input type="radio" name="rd_hostel"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_hostel"value="satisfied"></td>
+            <td><input type="radio" name="rd_hostel"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_hostel"value="extremely satisfied"></td></tr>
+            <tr><td><li>Canteen</li></td><td><input type="radio" name="rd_canteen"value="not satisfied"></td>
+            <td><input type="radio" name="rd_canteen"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_canteen"value="satisfied"></td>
+            <td><input type="radio" name="rd_canteen"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_canteen"value="extremely satisfied"></td></tr>
+            <tr><td><li>Transport</li></td><td><input type="radio" name="rd_transport"value="not satisfied"></td>
+            <td><input type="radio" name="rd_transport"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_transport"value="satisfied"></td>
+            <td><input type="radio" name="rd_transport"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_transport"value="extremely satisfied"></td></tr>
+            <tr><td><li>Recreation</li></td><td><input type="radio" name="rd_recreation"value="not satisfied"></td>
+            <td><input type="radio" name="rd_recreation"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_recreation"value="satisfied"></td>
+            <td><input type="radio" name="rd_recreation"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_recreation"value="extremely satisfied"></td></tr>
+            <tr><td><li>Campus Society</li></td><td><input type="radio" name="rd_campus"value="not satisfied"></td>
+            <td><input type="radio" name="rd_campus"value="somewhat satisfied"></td>
+            <td><input type="radio" name="rd_campus"value="satisfied"></td>
+            <td><input type="radio" name="rd_campus"value="very much satisfied"></td>
+            <td><input type="radio" name="rd_campus"value="extremely satisfied"></td></tr>
+        </tr>-->
+        <th>Curriculum and Instruction</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    
+  </tr>
+  <tr>
+  
+    <td>Curriculum for science and humanities courses(math,physics,chemistry,english and management) were adequate</td>
+    <th><input type="radio"name="curriculum" value="A"></input></th>
+    <th><input type="radio"name="curriculum" value="B"></input></th>
+    <th><input type="radio"name="curriculum" value="C"></input></th>
+    <th><input type="radio"name="curriculum" value="D"></input></th>
+    <th><input type="radio"name="curriculum" value="E"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>How you rate the adequacy and usefullness of general courses of study</td>
+    <th><input type="radio" name="course"value="A"></input></th>
+    <th><input type="radio" name="course"value="B"></input></th>
+    <th><input type="radio" name="course"value="C"></input></th>
+    <th><input type="radio" name="course"value="D"></input></th>
+    <th><input type="radio" name="course"value="E"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>How you rate the adequacy and usefullness of Program core(major) courses</td>
+    <th><input type="radio"name="program"value="A"></input></th>
+    <th><input type="radio"name="program"value="B"></input></th>
+    <th><input type="radio"name="program"value="C"></input></th>
+    <th><input type="radio"name="program"value="D"></input></th>
+    <th><input type="radio"name="program"value="E"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>How you rate the adequacy and usefullness of elective courses</td>
+    <th><input type="radio"name="elective"value="A"></input></th>
+    <th><input type="radio"name="elective"value="B"></input></th>
+    <th><input type="radio"name="elective"value="C"></input></th>
+    <th><input type="radio"name="elective"value="D"></input></th>
+    <th><input type="radio"name="elective"value="E"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>How you rate the adequacy and usefullness of computer technology in curriculum</td>
+    <th><input type="radio"name ="computer_technology"value="A"></input></th>
+    <th><input type="radio"name ="computer_technology"value="B"></input></th>
+    <th><input type="radio"name ="computer_technology"value="C"></input></th>
+    <th><input type="radio"name ="computer_technology"value="D"></input></th>
+    <th><input type="radio"name ="computer_technology"value="E"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>Are you satisfied with the curriculum</td>
+    <th><input type="radio"name="feedback"value="A"></input></th>
+    <th><input type="radio"name="feedback"value="B"></input></th>
+    <th><input type="radio"name="feedback"value="C"></input></th>
+    <th><input type="radio"name="feedback"value="D"></input></th>
+    <th><input type="radio"name="feedback"value="E"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <th>Overall Program experience</th>
+    <th>strongly agree</th>
+    <th>Agree</th>
+    <th>Neutral</th>
+    <th>Disagree</th>
+    <th>Strongly disagree</th>
+    
+  </tr>
+  <tr>
+  
+    <td>As a graduating senior,i feel confident of my knowledge and understanding of my field of</td>
+    <th><input type="radio"name="confident"value="A"></input></th>
+    <th><input type="radio"name="confident"value="B"></input></th>
+    <th><input type="radio"name="confident"value="C"></input></th>
+    <th><input type="radio"name="confident"value="D"></input></th>
+    <th><input type="radio"name="confident"value="E"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>My Written and oral communication skills were reinforced by the program to allow me to function well in the job market</td>
+    <th><input type="radio"name="communication"value="A"></input></th>
+    <th><input type="radio"name="communication"value="B"></input></th>
+    <th><input type="radio"name="communication"value="C"></input></th>
+    <th><input type="radio"name="communication"value="D"></input></th>
+    <th><input type="radio"name="communication"value="E"></input></th>
+    
+  </tr>
+  <!--  <tr>
+  
+    <td>The project work within my academic program prepared me for my profession</td>
+    <th><input type="radio"name="rd_profession"value="strongly agree"></input></th>
+    <th><input type="radio"name="rd_profession"value="agree"></input></th>
+    <th><input type="radio"name="rd_profession"value="neutral"></input></th>
+    <th><input type="radio"name="rd_profession"value="disagree"></input></th>
+    <th><input type="radio"name="rd_profession"value="strongly disagree"></input></th>
+    
+  </tr> 
+  
+  
+    <td>I am satisfied that the academic program prepared me to sucedd within my profession</td>
+    <th><input type="radio"name="training"value="A"></input></th>
+    <th><input type="radio"name="training"value="B"></input></th>
+    <th><input type="radio"name="training"value="C"></input></th>
+    <th><input type="radio"name="training"value="D"></input></th>
+    <th><input type="radio"name="training"value="E"></input></th>
+    
+  </tr> -->
+  <tr>
+  
+    <td>I am satisfied with the skills i gained from the training compomnent of the program</td>
+    <th><input type="radio"name="training"value="A"></input></th>
+    <th><input type="radio"name="training"value="B"></input></th>
+    <th><input type="radio"name="training"value="C"></input></th>
+    <th><input type="radio"name="training"value="D"></input></th>
+    <th><input type="radio"name="training"value="E"></input></th>
+    
+       
+  </tr>
+  <tr>
+  
+    <!-- <td>My program of study provided me with the ethical and legal understandiong involved within my profession</td>
+    <th><input type="radio"name="rd_ethical"value="strongly agree"></input></th>
+    <th><input type="radio"name="rd_ethical"value="agree"></input></th>
+    <th><input type="radio"name="rd_ethical"value="neutral"></input></th>
+    <th><input type="radio"name="rd_ethical"value="disagree"></input></th>
+    <th><input type="radio"name="rd_ethical"value="strongly disagree"></input></th>
+    
+  </tr> -->
+  <tr>
+  
+    <td>I have found extracurricular activities enriching and supportive of the learning</td>
+    <th><input type="radio"name="act"value="A"></input></th>
+    <th><input type="radio"name="act"value="B"></input></th>
+    <th><input type="radio"name="act"value="C"></input></th>
+    <th><input type="radio"name="act"value="D"></input></th>
+    <th><input type="radio"name="act"value="E"></input></th>
+    
+  </tr>
+  <tr>
+<!--   
+    <td>I learned the skills needed to effectively locate retrieve and evaluate information</td>
+    <th><input type="radio"name="rd_information"value="strongly agree"></input></th>
+    <th><input type="radio"name="rd_information"value="agree"></input></th>
+    <th><input type="radio"name="rd_information"value="neutral"></input></th>
+    <th><input type="radio"name="rd_information"value="disagree"></input></th>
+    <th><input type="radio"name="rd_information"value="strongly disagree"></input></th>
+    
+  </tr>
+  <tr>
+  
+    <td>I believe in continuing proffesional development and aim to develop my skills and knowledge for graduation.</td>
+    <th><input type="radio"name="rd_grad"value="strongly agree"></input></th>
+    <th><input type="radio"name="rd_grad"value="agree"></input></th>
+    <th><input type="radio"name="rd_grad"value="neutral"></input></th>
+    <th><input type="radio"name="rd_grad"value="disagree"></input></th>
+    <th><input type="radio"name="rd_grad"value="strongly disagree"></input></th>
+    
+  </tr>
+  <tr>
+   -->
+    <td>In general,I am satisfied with the experience i had at silicon</td>
+    <th><input type="radio"name="exp"value="A"></input></th>
+    <th><input type="radio"name="exp"value="B"></input></th>
+    <th><input type="radio"name="exp"value="C"></input></th>
+    <th><input type="radio"name="exp"value="D"></input></th>
+    <th><input type="radio"name="exp"value="E"></input></th>
+    
+  </tr>
+  <!-- <tr>
+  
+    <td>I would advise other students to attend silicon</td>
+    <th><input type="radio"name="rd_advice"value="strongly agree"></input></th>
+    <th><input type="radio"name="rd_advice"value="agree"></input></th>
+    <th><input type="radio"name="rd_advice"value="neutral"></input></th>
+    <th><input type="radio"name="rd_advice"value="disagree"></input></th>
+    <th><input type="radio"name="rd_advice"value="strongly disagree"></input></th>
+    
+  </tr> -->
+</table>
+  <p><strong>Section 3. Comments/Suggestions(Please feel free to comment on the program and its graduates in terms of their proffesionbal qualities and on any specific areas of strengths and weaknesses.Also,please feel free to suffest any improvements to our program of study) </strong></p>
+<table style="width:70%">
+ <tr><th>List the courses within your program from which you benefitted the most</th></tr>
+ <tr><td><textarea id="first" name="txta_first" rows="10" cols="150"></textarea></td></tr>
+ 
+</table>
+<table style="width:70%">
+  <tr><th>Which courses provided the best practical experience?</th></tr>
+  <tr><td><textarea id="second" name="txta_second" rows="10" cols="150"></textarea></td></tr>
+</table>
+<table style="width:70%">
+  <tr><th>What advice would you give to other students enrolled within your prograame?</th></tr>
+  <tr><td><textarea id="third" name="txta_third" rows="10" cols="150"></textarea></td></tr>
+</table>
+<table style="width:70%">
+  <tr><th>Any other suggestions to enrich the program of study at silicon.</th></tr>
+  <tr><td><textarea id="fourth" name="txta_fourth" rows="10" cols="150"></textarea></td></tr>
+</table>
+<input type = "submit" class="btn btn-success" value = "Submit" />
+</form>
+</div>
+
+<!--/ Form form /-->
+
+
+
+
+
+  <!--/ footer Star /-->
+  <section class="section-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Graduate Survey</h3>
+            </div>
+            <div class="w-body-a">
+              <p class="w-text-a color-text-a">
+                Your opinion is valuable to us. Give us your feedback so that we can improve further.
+              </p>
+            </div>
+            <div class="w-footer-a">
+              <ul class="list-unstyled">
+                <li class="color-a">
+                  <span class="color-text-a">Phone .</span> beyondteaching@gmail.com</li>
+                <li class="color-a">
+                  <span class="color-text-a">Email .</span> 7381499499</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Developers</h3>
+            </div>
+            <div class="w-body-a">
+              <div class="w-body-a">
+                <ul class="list-unstyled">
+                  <li class="item-list-a">
+                    <i class="fa fa-angle-right"></i> <a href="#">Subham Sahoo</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fa fa-angle-right"></i> <a href="#">Suraj Kumar Mahato</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fa fa-angle-right"></i> <a href="#">Lakhi Charan Mahato</a>
+                  </li>
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="nav-footer">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">About</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="socials-a">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-dribbble" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright-footer">
+            <p class="copyright color-text-a">
+              &copy; Copyright
+              <span class="color-a">Graduate Survey</span> All Rights Reserved.
+            </p>
+          </div>
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
+            -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/ Footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/scrollreveal/scrollreveal.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+    <head>
+            <script>
+                    function validLogin(){
+                    if (document.form.sic.value == ""){
+                    alert ( "Please enter SIC." );
+                    document.loginform.userName.focus();
+                    return false;
+                    }}
+                    </script>
+                      <title>SILICON HOME</title>
+                      <meta charset="utf-8">
+                      <meta name="viewport" content="width=device-width, initial-scale=1">
+                      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+                      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+                      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <form action="sic.jsp" method="post" name="form" onsubmit="return validLogin();">
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>SURVEY FORM</h2>
+    <h4>Click on the below button to take the survey.</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+           
+    </div> 
+            <div class="col-sm-4 col-xs-12">
+                    <div class="panel panel-default text-center">
+                      <div class="panel-heading">
+                        <h3>Please Enter the SIC:-</h3>
+                        <input class="form-control"  name="sic" value="" placeholder="SIC..." type="text" required>
+                      </div>
+                      <div class="panel-body">
+                        <p><strong>Please click the below button to take the survey.We will be highly thankful to you.</strong></p>
+                       
+                      </div>
+                      <div class="panel-footer">
+                        
+                        <button class="btn btn-lg" type="submit" name="Submit">Take Survey</button>
+                      </div>
+                      </div>
+                    </div>      
+                  </div>       
+                  <div class="col-sm-4 col-xs-12">
+                          
+                  </div>    
+                </div>
+              </div>
+              </form>
+    </body>
+</html>
